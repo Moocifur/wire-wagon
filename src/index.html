@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +9,12 @@
 <body>
   <!-- Header -->
   <header>
-    <h1>Lane Orthodontics</h1>
-    <nav>
+    <div class="header-title">
+      <h1>Lane Orthodontics</h1>
+    </div>
+    <nav class="sticky-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact Us</a></li>
@@ -22,76 +23,105 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-placeholder">
+  <section class="hero home-hero">
+    <div class="hero-content">
       <h2>Your Smile, Our Passion</h2>
-      <p>Exceptional orthodontic care for all ages.</p>
+      <p>Exceptional orthodontic care tailored to your needs.</p>
       <a href="contact.html" class="button">Book an Appointment</a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>Dr. Lane and her team provide personalized orthodontic care, specializing in advanced treatments like Invisalign and braces.</p>
-    <a href="about.html" class="button">Learn More</a>
+  <!-- Introduction Section -->
+  <section class="introduction">
+    <h2>Welcome to Lane Orthodontics</h2>
+    <p>Dr. Lane provides expert orthodontic care in a state-of-the-art mobile practice. With over 10 years of experience, he specializes in creating confident smiles for patients of all ages.</p>
   </section>
 
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-item">
-      <div class="service-placeholder">
-        <h3>Braces</h3>
+  <section class="services-preview">
+    <h2>Our Featured Services</h2>
+    <div class="services-container">
+      <div class="service-item">
+        <h3>Comprehensive Treatment</h3>
+        <p>Orthodontic care tailored for both adults and children.</p>
       </div>
-    </div>
-    <div class="service-item">
-      <div class="service-placeholder">
-        <h3>Invisalign</h3>
+      <div class="service-item">
+        <h3>Advanced X-Rays</h3>
+        <p>In-house Panoramic and Cephalometric imaging for precision care.</p>
       </div>
-    </div>
-    <div class="service-item">
-      <div class="service-placeholder">
-        <h3>TMJ Therapy</h3>
+      <div class="service-item">
+        <h3>Clear Aligners</h3>
+        <p>Discreet and comfortable solutions for straighter teeth.</p>
+      </div>
+      <div class="service-item">
+        <h3>Complimentary Consultations</h3>
+        <p>Get expert advice and start your smile journey today.</p>
       </div>
     </div>
     <a href="services.html" class="button">View All Services</a>
   </section>
+  
 
   <!-- Testimonials Section -->
   <section class="testimonials">
     <h2>What Our Patients Say</h2>
-    <div class="testimonial-carousel">
-      <div class="testimonial-item">
-        <blockquote>
-          "Dr. Lane and her staff are amazing! I’m thrilled with my new smile."
-        </blockquote>
-        <cite>– Happy Patient</cite>
-      </div>
-      <div class="testimonial-item">
-        <blockquote>
-          "My Invisalign experience was so easy and effective. Highly recommend!"
-        </blockquote>
-        <cite>– Satisfied Patient</cite>
-      </div>
-    </div>
+    <blockquote>
+      <p>"Dr. Lane is awesome! I'm 49 years old and my retainer broke for my lower teeth. He noticed that I have some grinding issues and some TMJ so he made a retainer and night guard all in one and it's incredible! Looking forward to getting rid of the tension in my jaw and neck and I am so thrilled! Love the easy-going and relaxing atmosphere in the office and the staff is super friendly and accommodating. Dr. Lane is funny and engaging and really cares about his patients. I am so happy I found Dr. Lane!"</p>
+      <cite>– Mary S.</cite>
+    </blockquote>
+    <blockquote>
+      <p>"Doctor Lane has worked with three of my children so far. He works very hard to personalize their care to design devices that work for the specific situation with each child. The office has worked hard to work with our insurance and charge us much less than other offices. I appreciate the attention to detail and great care given my children."</p>
+      <cite>– Alison P.</cite>
+    </blockquote>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Loma Linda Office:</strong> 123 Smile Lane, Loma Linda, CA</p>
-    <p><strong>Phone:</strong> (123) 456-7890</p>
-    <a href="contact.html" class="button">Get Directions</a>
+  <section class="insurance">
+    <h2>Accepted Insurances</h2>
+    <ul>
+      <li>Delta Dental</li>
+      <li>Aetna</li>
+      <li>Metlife</li>
+      <li>United Healthcare</li>
+      <li>United Concordia</li>
+      <li>UFCW</li>
+      <li>Tricare Plans</li>
+      <li>Cigna</li>
+      <li>Principal</li>
+      <li>Guardian</li>
+      <li>Risk Management</li>
+      <li>Anthem Blue Cross/Blue Shield</li>
+    </ul>
+    <p>If your provider isn't listed, <a href="contact.html">contact us</a> to confirm eligibility.</p>
   </section>
+
+  <!-- Contact Form Section -->
+<!-- Contact Form Section -->
+<section class="contact-form">
+  <h2>Leave Us a Message</h2>
+  <!-- Placeholder Form -->
+  <div>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+</section>
+
+
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Lane Orthodontics. All rights reserved.</p>
-    <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Instagram</a></li>
-    </ul>
   </footer>
 </body>
 </html>

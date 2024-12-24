@@ -25,16 +25,16 @@ module.exports = {
       filename: "about.html",
       chunks: ["about"], // Include only 'about' bundle
     }),
-    // new HtmlWebpackPlugin({
-    //   template: "./src/services.html", // Template for services page
-    //   filename: "services.html",
-    //   chunks: ["services"], // Include only 'services' bundle
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: "./src/contact.html", // Template for contact page
-    //   filename: "contact.html",
-    //   chunks: ["contact"], // Include only 'contact' bundle
-    // }),
+    new HtmlWebpackPlugin({
+      template: "./src/services.html", // Template for services page
+      filename: "services.html",
+      chunks: ["services"], // Include only 'services' bundle
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/contact.html", // Template for contact page
+      filename: "contact.html",
+      chunks: ["contact"], // Include only 'contact' bundle
+    }),
   ],
   module: {
     rules: [
